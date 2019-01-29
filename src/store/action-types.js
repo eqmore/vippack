@@ -1,0 +1,3 @@
+export const SET_CUR_LESSON="SET_CUR_LESSON";
+export const GETSLIDERS="GETSLIDERS";
+
