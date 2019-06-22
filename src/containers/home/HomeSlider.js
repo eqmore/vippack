@@ -5,10 +5,13 @@ class HomeSlider extends Component {
         super(props);
         this.state={index:0}
     }
+    componentDidMount(){
+        
+    }
     
     render() {
         console.log(this.props.lists);
-        let opt={ continuous: false,auto:300,
+        let opt={ continuous: true,auto:300,
         callback:(index)=>{this.setState({index});} }
         return (
             <div className="home-swiper">

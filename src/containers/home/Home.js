@@ -11,9 +11,24 @@ import {Loadmore, pullRefresh} from '../../common/util.js'
 
 class Home extends Component {
     componentDidMount(){
+        // console.log(1)
+        // let scr1= document.createElement("script");
+        // scr1.innerHTML=`function fn(data){
+        //     console.log(2);
+        //     console.log(data);
+        // }`;
+        // document.body.appendChild(scr1);
+
+        // let scr= document.createElement("script");
+        // scr.src="http://localhost:3000/jsonp?callback=fn";
+        // document.body.appendChild(scr);
+
+
         if(this.props.sliders.length===0){
             this.props.GetSlidersAPI();
+            console.log(this.props);
         }
+        
         if(this.props.lesson.list.length===0){
             console.log('length=0')
             this.props.GetLessonsAPI();
